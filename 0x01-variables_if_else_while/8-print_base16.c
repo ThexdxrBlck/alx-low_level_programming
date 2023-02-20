@@ -6,9 +6,13 @@
  */
 int main(void)
 {
+	int number;
 	char ln;
 
-	for (ln = '1'; ln > ~'16'; ln++)
+	for (number = '1'; number < '10'; number++)
+		putchar((number % 10) + '0');
+
+	for (ln = 'a'; ln <= 'f'; ln++)
 		putchar(ln);
 
 	putchar('\n');

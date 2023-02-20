@@ -8,7 +8,7 @@ int main(void)
 {
 	char ln;
 
-	for (ln = '1'; ln < ~'16'; ln++)
+	for (ln = '1'; ln > ~'16'; ln++)
 		putchar(ln);
 
 	putchar('\n');

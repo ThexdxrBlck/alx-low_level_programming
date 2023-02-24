@@ -20,6 +20,7 @@ int largest_number(int a, int b, int c)
 			largest = a;
 		else
 			largest = c;
+	
 	}
 	else
 	{
@@ -29,3 +30,4 @@ int largest_number(int a, int b, int c)
 			largest = b;
 	}
 	return (largest);
+}

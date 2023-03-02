@@ -4,25 +4,25 @@
  * _strcat - concatennates two strings
  * @dest: copy to
  * @src: copy from
- * Return: pointer to dest
+ * Return: prointer to desr
  */
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
-	int u;
-	int l;
+	int p;
+	int r;
 
-	u = 0;
-	while (dest[u] != '\0')
+	p = 0;
+	while (dest[p] != '\0')
 	{
-		u++;
+		p++;
 	}
-	l = 0;
-	while (src[l] != '\0')
+	r = 0;
+	while (src[r] != '\0')
 	{
-		dest[u] = src[l];
-		u++;
-		l++;
+		dest[p] = src[r];
+		p++;
+		r++;
 	}
-	dest[u] = '\0';
+	dest[p] = '\0';
 	return (dest);
 }
